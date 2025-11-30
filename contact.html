@@ -6,49 +6,69 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
-    <header>
-        <h1>Contact Us</h1>
-    </header>
+<div class="Background">
 
-    <main>
-        <div class="form-container">
-            <form>
+<header class="header-strip">
+<nav class="whole">
+    <div class="nav-group left-group">
+        <a href="about.html" class="nav">ABOUT</a>
+        <a href="offers.html" class="nav">OFFERS</a>
+    </div>
 
-        <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Name"
-        /><small class="error"></small>
-        <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="email"
-        /><small class="error"></small><!--class for validating input-->
-        <input
-            type="number"
-            id="number"
-            name="number"
-            placeholder="Phone Number"
-        /><small class="error"></small>
-        <textarea
-        id="message"
-        name="message"
-        placeholder="Message"
-        ></textarea><small class="error"></small>
-        <span></span>
-        <button type="submit">Submit</button>
-            </form>
-        </div>
-    </main>
+    <div class="nav-logo">
+        <img src="word logo.png" alt="Company Logo" id="navlogo">
+    </div>
 
-    <footer></footer>
+    <div class="nav-group right-group">
+        <a href="index.html" class="nav">HOME</a>
+        <a href="contact.html" class="nav">CONTACT</a>
+    </div>
+</nav>
+</header>
+
+<section class="top-images">
+    <figure class="contact">
+        <a href="https://www.facebook.com/share/1FidZr18Zc/?mibextid=wwXIfr" target="_blank">
+            <img src="contact.png" alt="Contact Header Image">
+        </a>
+    </figure>
+
+    <figure class="feedback">
+        <img src="feedback.png" alt="Feedback Information Image">
+    </figure>
+</section>
+
+<section class="form-section">
+    <div class="form-container">
+        <form id="contactForm">
+
+            <label for="name">Full Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Juan Dela Cruz" required>
+            <small class="error"></small><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="JuanDelaCruz@email.com" required>
+            <small class="error"></small><br>
+
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="09123456789" required>
+            <small class="error"></small><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" placeholder="Tell us what you think..." required></textarea>
+            <small class="error"></small><br>
+
+            <button type="submit" class="submit-btn centered-btn">SUBMIT</button>
+
+        </form>
+    </div>
+</section>
+
 <script type="module" src="script.js" defer></script>
+
+</div>
 </body>
 </html>
-
